@@ -1,0 +1,140 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 110;
+    width: 100%;
+    height: 220px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header.up{
+    height: 110px;
+    opacity: 1;
+    transform: translate(0, 110px);
+    top: 110px;
+    transform: translateY(-110px);
+}
+
+header.up #hmenu{
+    top: 0 !important;
+    background-color: #ffffff;
+}
+
+header.fixed{
+    position: fixed;
+    transition-delay: 0s;
+    height: 110px;
+}
+
+header.fixed h1{
+    display: none;
+}
+
+header.fixed #hmenu{
+    transition: all .7s;
+}
+
+header.fixed.up{
+    display: block;
+    overflow: unset;
+}
+
+header.fixed.up .hmenu_inner > li > a > span{
+    color: #000000;
+}
+
+header.down #hmenu{
+    top: -110px;
+    background-color: #ffffff;
+}
+
+header .inner{
+    z-index: 2;
+    display: block;
+    width: auto;
+}
+
+header #hmenu .hmenu_container{
+    height: 100%;
+    position: relative;
+    width: 1600px;
+    margin: 0 auto;
+}
+
+header h1{
+    padding-top: 40px;
+    text-align: center;
+    line-height: 0.5;
+    display: block;
+}
+
+header h1 a{
+    display: block;
+    width: 152px;
+    height: 73px;
+    margin: 0 auto;
+    color: transparent;
+    background: url('../media/image/logo-w.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+#hmenu{
+    position: absolute;
+    top: 141px;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 110px;
+}
+
+header .hmenu_inner{
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+
+header .hmenu_inner > li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 60px;
+}
+
+header .hmenu_inner > li:last-child{
+    margin-right: 0;
+}
+
+header .hmenu_inner > li > a{
+    display: block;
+    height: 81px;
+    padding-top: 42px;
+}
+
+header .hmenu_inner > li > a > span{
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'trajan-pro-3';
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.fixed .h_logo_left{
+    display: block;
+}
+
+.h_logo_left{
+    position: absolute;
+    top: 20px;
+    z-index: 10;
+    display: none;
+    width: 152px;
+    height: 73px;
+}
+
+.h_logo_left img{
+    width: 100%;
+    height: 100%;
+}

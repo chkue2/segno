@@ -1,0 +1,42 @@
+footer{
+    background: #000000;
+    width: 100%;
+}
+
+footer .inner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 141px;
+    padding-bottom: 70px;
+}
+
+footer .inner .ft_box_01 .fb_logo{
+    width: 150px;
+    height: 73px;
+}
+
+footer .inner .ft_box_01 .fb_text{
+    color: #d9d9d9;
+    font-size: 15px;
+    padding-top: 35px;
+}
+
+footer .inner .ft_box_02{
+    padding-top: 50px;
+    display: flex;
+}
+
+footer .inner .ft_box_02 .fb_container{
+    color: #ffffff;
+    margin-left: 62px;
+}
+
+footer .inner .ft_box_02 .fbc_01{
+    font-size: 15px;
+    color: #C7C7C7;
+}
+
+footer .inner .ft_box_02 .fbc_02{
+    font-size: 40px;
+    padding-top: 10px;
+}
