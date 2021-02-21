@@ -19,7 +19,7 @@ header.up{
 
 header.up #hmenu{
     top: 0 !important;
-    background-color: #ffffff;
+    background-color: #ffffff !important;
 }
 
 header.fixed{
@@ -56,6 +56,51 @@ header .inner{
     width: auto;
 }
 
+header .title{
+    display: none;
+}
+
+header .h_lang_select{
+    width: 1600px;
+    text-align: right;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 11;
+    top: 0;
+}
+
+header .h_lang_select .hl_container{
+    display: inline-block;
+    cursor: pointer;
+}
+
+header .h_lang_select .arrow_d {
+    width: 10px;
+    height: 10px;
+    background-image: url(/content/media/image/arrow_d_white.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+header .h_lang_select a{
+    margin-left: 20px;
+    color: #666666;
+    display: none;
+}
+
+header .h_lang_select .s{
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+header .h_lang_select .n:hover{
+    color: #FFFFFF;
+}
+
 header #hmenu .hmenu_container{
     height: 100%;
     position: relative;
@@ -84,7 +129,6 @@ header h1 a{
     position: absolute;
     top: 141px;
     left: 0;
-    z-index: 10;
     width: 100%;
     height: 110px;
 }
@@ -93,6 +137,9 @@ header .hmenu_inner{
     position: relative;
     text-align: center;
     height: 100%;
+    width: 500px;
+    margin: 0 auto;
+    z-index: 12;
 }
 
 header .hmenu_inner > li {
@@ -128,7 +175,7 @@ header .hmenu_inner > li > a > span{
 .h_logo_left{
     position: absolute;
     top: 20px;
-    z-index: 10;
+    z-index: 13;
     display: none;
     width: 152px;
     height: 73px;
@@ -137,4 +184,61 @@ header .hmenu_inner > li > a > span{
 .h_logo_left img{
     width: 100%;
     height: 100%;
+}
+
+header.fixed .inner{
+    display: none;
+}
+
+header.fixed #hmenu .h_lang_select{
+    top: 0;
+    padding-top: 45px;
+}
+
+header.fixed #hmenu .h_lang_select a:hover{
+    color: #3B3B3B;
+}
+
+header.fixed #hmenu .h_lang_select .s{
+    color: #3B3B3B;
+}
+
+header.fixed #hmenu .h_lang_select .arrow_d{
+    background-image: url(/content/media/image/arrow_d_black.svg);
+}
+
+.hline.on {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #FFFFFF;
+    margin-bottom: 10px;
+}
+
+header.fixed .hline.on{
+    border-color: #000000;
+}
+
+.main.bg_gra .hline.on, .main.bg_gray  .hline.on{
+    border-color: #000000;
+}
+
+.main.bg_gra .h_lang_select a:hover,
+.main.bg_gray .h_lang_select a:hover{
+    color: #3B3B3B;
+}
+.main.bg_gra .h_lang_select .s,
+.main.bg_gray .h_lang_select .s{
+    color: #3B3B3B;
+}
+
+.main.bg_gra .h_lang_select .arrow_d,
+.main.bg_gray .h_lang_select .arrow_d{
+    background-image: url(/content/media/image/arrow_d_black.svg);
+}
+
+header.down .title,
+header.fixed .title,
+.main.bg_gra header .title,
+.main.bg_gray header .title{
+    color: #3B3B3B;
 }

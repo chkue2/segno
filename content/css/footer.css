@@ -4,8 +4,8 @@ footer{
 }
 
 footer .inner{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     padding-top: 141px;
     padding-bottom: 70px;
 }
@@ -16,9 +16,17 @@ footer .inner .ft_box_01 .fb_logo{
 }
 
 footer .inner .ft_box_01 .fb_text{
-    color: #d9d9d9;
+    color: #FFFFFF;
     font-size: 15px;
     padding-top: 35px;
+    letter-spacing: -0.38px;
+}
+
+footer .inner .ft_box_01 .copyright{
+    margin-top: 12px;
+    font-size: 15px;
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
 }
 
 footer .inner .ft_box_02{

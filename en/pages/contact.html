@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SEGNO</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="test" />
+        <meta name="description" content="test" />
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="/content/css/reset.css" />
+        <link rel="stylesheet" href="/content/css/header.css" />
+        <link rel="stylesheet" href="/content/css/footer.css" />
+        <link rel="stylesheet" href="/content/css/index.css" />
+    </head>
+
+    <script src="/content/lib/jquery-3.5.1-slim.js"></script>
+    <script src="/content/lib/includeHTML.js"></script>
+    <script src="/content/js/header.js"></script>
+
+    <body class="main over bg_gray" onload="changeHeader();">
+        <header id="header"></header>
+        <div class="image_area main_area section_05">
+            <div class="inner">
+                <div class="map_container">
+                    <p class="mc_text_01">
+                        <i class="loc"></i>
+                        <span>301, 39, 220-gil, Nambusunhwan-ro, Gwanak-gu, Seoul</span>
+                    </p>
+                    <div class="map">
+                    </div>
+                    <p class="mc_text_02">
+                        Contact us for export and partnership inquiry
+                        <span class="mc_underbar"></span>
+                    </p>
+                </div>
+                <div class="table_container">
+                    <table id="contact_form">
+                        <tr>
+                            <th>Name</th>
+                            <td><input type="text" id="name"/></td>
+                            <th>Corporate name</th>
+                            <td><input type="text" id="comp"/></td>
+                        </tr>
+                        <tr>
+                            <th>Phone number</th>
+                            <td><input type="text" id="tel"/></td>
+                            <th>E-mail</th>
+                            <td><input type="text" id="email"/></td>
+                        </tr>
+                        <tr>
+                            <th>Inquiry</th>
+                            <td colspan="3"><textarea id="content" cols="50" rows="50"></textarea></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="contact_btn">
+                    Register
+                </div>
+            </div>
+        </div>
+        <footer id="footer"></footer>
+    </body>
+
+</html>

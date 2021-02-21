@@ -1,6 +1,12 @@
 $(function(){
-    includeHTML(document.querySelector('#header'), '/ko/layout/header.html');
-    includeHTML(document.querySelector('#footer'), '/ko/layout/footer.html');    
+    var lang = document.documentElement.lang;
+    if(lang === 'ko'){
+        includeHTML(document.querySelector('#header'), '/ko/layout/header.html');
+        includeHTML(document.querySelector('#footer'), '/ko/layout/footer.html');
+    } else {
+        includeHTML(document.querySelector('#header'), '/en/layout/header.html');
+        includeHTML(document.querySelector('#footer'), '/en/layout/footer.html');
+    }
 })
 
 function includeHTML(divContainer, urlHTML) {
