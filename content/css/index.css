@@ -607,6 +607,22 @@ body{
     width: 100%;
 }
 
+:lang(en) #se09_01 .tb_underbar_01{
+    width: 25%;
+}
+
+:lang(en) #se09_02 .tb_underbar_01{
+    width: 50%;
+}
+
+:lang(en) #se09_03 .tb_underbar_01{
+    width: 75%;
+}
+
+:lang(en) #se09_04 .tb_underbar_01{
+    width: 100%;
+}
+
 .main .section_09 .se09_right{
     width: 510px;
     height: 624px;
