@@ -61,7 +61,7 @@ $(function(){
       if(thisfilefullname === 'brand.html'){
          $('.hbrand').find('.hline').addClass('on');
          $('header .title').text('BRAND');
-      } else if(thisfilefullname === 'product.html' || thisfilefullname === 'detail.html'){
+      } else if(thisfilefullname === 'product.html' || thisfilefullname === 'detail.html' || thisfilefullname === 'detail_01.html' || thisfilefullname === 'detail_02.html'){
          $('.hproduct').find('.hline').addClass('on');
          $('header .title').text('PRODUCT');
       } else if(thisfilefullname === 'contact.html'){

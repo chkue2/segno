@@ -15,6 +15,20 @@ $(function(){
         $('#se09_0'+cnt).addClass('on');
     });
 
+    $(document).on('click', '.prev_on', function(){
+        cnt = cnt - 1;
+
+        $('.se09_b_container').removeClass('on');
+        $('#se09_0'+cnt).addClass('on');
+    });
+
+    $(document).on('click', '.next_on', function(){
+        cnt = cnt + 1;
+
+        $('.se09_b_container').removeClass('on');
+        $('#se09_0'+cnt).addClass('on');
+    });
+
 
     $(document).on('click', '.contact_btn', function(){
         emailjs.init('user_1KMcY64rgbKrL2jkIfwiA');
