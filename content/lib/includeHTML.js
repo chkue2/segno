@@ -3,6 +3,9 @@ $(function(){
     if(lang === 'ko'){
         includeHTML(document.querySelector('#header'), '/ko/layout/header.html');
         includeHTML(document.querySelector('#footer'), '/ko/layout/footer.html');
+    } if(lang === 'vn'){
+        includeHTML(document.querySelector('#header'), '/vn/layout/header.html');
+        includeHTML(document.querySelector('#footer'), '/vn/layout/footer.html');
     } else {
         includeHTML(document.querySelector('#header'), '/en/layout/header.html');
         includeHTML(document.querySelector('#footer'), '/en/layout/footer.html');
