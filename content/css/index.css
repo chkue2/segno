@@ -291,10 +291,6 @@ body{
     height: 200px;
     background-color: #DBDBDB;
     margin-bottom: 31px;
-    background-image: url(/content/media/image/d_map.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .main_area.section_05 .mc_text_02{
@@ -387,6 +383,7 @@ body{
     text-align: center;
     margin-top: 20px;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 
 /* .main_area.section_05 .store_list{
@@ -1432,7 +1429,7 @@ body{
 
     .main_area.section_05 {
         padding-top: 92px;
-        height: 85%;
+        height: auto;
         min-height: 1000px;
     }
 

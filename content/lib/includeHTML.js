@@ -6,7 +6,7 @@ $(function(){
     } if(lang === 'vn'){
         includeHTML(document.querySelector('#header'), '/vn/layout/header.html');
         includeHTML(document.querySelector('#footer'), '/vn/layout/footer.html');
-    } else {
+    } else if(lang === 'en') {
         includeHTML(document.querySelector('#header'), '/en/layout/header.html');
         includeHTML(document.querySelector('#footer'), '/en/layout/footer.html');
     }

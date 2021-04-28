@@ -11,11 +11,15 @@
         <link rel="stylesheet" href="/content/css/header.css" />
         <link rel="stylesheet" href="/content/css/footer.css" />
         <link rel="stylesheet" href="/content/css/index.css" />
-    </head>
 
-    <script src="/content/lib/jquery-3.5.1-slim.js"></script>
-    <script src="/content/lib/includeHTML.js"></script>
-    <script src="/content/js/header.js"></script>
+        <script src="/content/lib/jquery-3.5.1-slim.js"></script>
+        <script src="/content/lib/includeHTML.js"></script>
+        <script src="/content/js/header.js"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+        </script>
+        <script src="/content/js/index.js"></script>
+    </head>
 
     <body class="main over bg_gray" onload="changeHeader();">
         <header id="header"></header>
@@ -26,7 +30,7 @@
                         <i class="loc"></i>
                         <span>Tầng 11, 159-1 Mokdongseo-ro, Yangcheon-gu, Seoul, Hàn Quốc</span>
                     </p>
-                    <div class="map">
+                    <div class="map" id="map">
                     </div>
                     <p class="mc_text_02">
                         Liên hệ với chúng tôi
@@ -56,9 +60,29 @@
                 <div class="contact_btn">
                     Gửi phản hồi
                 </div>
+                <div class="map_container">
+                    <p class="mc_text_01">
+                        <i class="loc"></i>
+                        <span>Hà Nội: Tầng 3, Việt Tower, 1 Thái Hà, Đống Đa, Hà Nội</span>
+                    </p>
+                    <div class="map" id="map1">
+                    </div>
+                </div>
+                <div class="map_container">
+                    <p class="mc_text_01">
+                        <i class="loc"></i>
+                        <span>Hồ Chí Minh: Tầng 1, 27B Nguyễn Đình Chiểu, Đa Kao, Quận 1, Thành phố Hồ Chí Minh</span>
+                    </p>
+                    <div class="map" id="map2">
+                    </div>
+                </div>
             </div>
         </div>
         <footer id="footer"></footer>
-    </body>
 
+        <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOK6QrFzCPj14yOr_zUNz2xJJXyxGbfPM&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    </body>
 </html>

@@ -16,6 +16,10 @@
     <script src="/content/lib/jquery-3.5.1-slim.js"></script>
     <script src="/content/lib/includeHTML.js"></script>
     <script src="/content/js/header.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script src="/content/js/index.js"></script>
 
     <body class="main over bg_gray" onload="changeHeader();">
         <header id="header"></header>
@@ -26,7 +30,7 @@
                         <i class="loc"></i>
                         <span>11th Floor, 159-1, Mokdongseo-ro, Yangcheon-gu, Seoul, Republic of Korea</span>
                     </p>
-                    <div class="map">
+                    <div class="map" id="map">
                     </div>
                     <p class="mc_text_02">
                         Contact us for export and partnership inquiry
@@ -56,9 +60,30 @@
                 <div class="contact_btn">
                     Register
                 </div>
+                <div class="map_container">
+                    <p class="mc_text_01">
+                        <i class="loc"></i>
+                        <span>Hanoi: 3rd Floor, Viet Tower, 1 Thai Ha Street, Dong Da, Hanoi</span>
+                    </p>
+                    <div class="map" id="map1">
+                    </div>
+                </div>
+                <div class="map_container">
+                    <p class="mc_text_01">
+                        <i class="loc"></i>
+                        <span>Ho Chi Minh: 1st Floor, 27B Nguyen Dinh Chieu Street, Da Kao Ward, District 1, Ho Chi Minh City.</span>
+                    </p>
+                    <div class="map" id="map2">
+                    </div>
+                </div>
             </div>
         </div>
         <footer id="footer"></footer>
+
+        <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOK6QrFzCPj14yOr_zUNz2xJJXyxGbfPM&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
     </body>
 
 </html>
