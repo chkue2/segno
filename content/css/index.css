@@ -102,7 +102,7 @@ body{
     z-index: 11;
 }
 
-
+.section_00 .text_box,
 .section_01 .text_box{
     position: absolute;
     top: 50%;
@@ -128,7 +128,7 @@ body{
 .main_area .text_box .tb_text{
     font-size: 20px;
     font-weight: 600;
-    color: #B2B2B2;
+    color: #a0a0a0;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -143,8 +143,11 @@ body{
 
 .main_area .text_box .tb_02{
     padding-top: 26px;
+}
+
+.main_area .text_box .tb_02,
+.main_area .text_box .tb_02 p{
     font-size: 50px;
-    letter-spacing: -1.25px;
 }
 
 .main_area .text_box .tb_03{
@@ -164,15 +167,22 @@ body{
     font-size: 15px;
 }
 
+.main_area.section_00{
+    background-image: url('/content/media/image/w_bg1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .main_area.section_01{
-    background-image: url('/content/media/image/main1.png');
+    background-image: url('/content/media/image/w_bg2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .main_area.section_02{
-    background-image: url('/content/media/image/about_us_img.png');
+    background-image: url('/content/media/image/w_bg3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -919,6 +929,9 @@ body{
         width: 400px;
     }
 
+    .section_00 .text_box{
+        right: -150px;
+    }
     .section_01 .text_box {
         top: 265px;
         right: -150px;
@@ -1316,20 +1329,29 @@ body{
         display: none;
     }
 
-    .main_area.section_01, .main_area.section_02, .main_area.section_03{
+    .main_area.section_00,
+    .main_area.section_01,
+    .main_area.section_02,
+    .main_area.section_03{
         height: 62%;
         min-height: 575px;
     }
 
+    .main_area.section_00{
+        background-image: url(/content/media/image/m_bg1.png);
+    }
+
     .main_area.section_01{
-        background-image: url(/content/media/image/1_1.png);
+        background-image: url(/content/media/image/m_bg2.png);
     }
 
     .main_area.section_02{
-        background-image: url(/content/media/image/1_2.png);
+        background-image: url(/content/media/image/m_bg3.png);
     }
 
-    .main_area.section_01 .text_box, .main_area.section_02 .text_box{
+    .main_area.section_00 .text_box,
+    .main_area.section_01 .text_box,
+    .main_area.section_02 .text_box{
         position: unset;
         padding-top: 45px;
         transform: unset;
@@ -1342,7 +1364,10 @@ body{
     .main_area .text_box .tb_02 {
         padding-top: 17px;
         font-size: 23px;
-        letter-spacing: -1.15px;
+    }
+
+    .main_area .text_box .tb_02 p{
+        font-size: 23px;
     }
 
     .main_area .text_box .tb_03 {
