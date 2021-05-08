@@ -104,6 +104,7 @@ body{
 
 .section_00 .text_box,
 .section_01 .text_box{
+    width: 500px;
     position: absolute;
     top: 50%;
     right: 40px;
@@ -1352,6 +1353,7 @@ body{
     .main_area.section_00 .text_box,
     .main_area.section_01 .text_box,
     .main_area.section_02 .text_box{
+        width: 60%;
         position: unset;
         padding-top: 45px;
         transform: unset;
