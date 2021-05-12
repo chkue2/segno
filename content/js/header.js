@@ -14,7 +14,7 @@ $(function(){
            //Replace this with your function call for downward-scrolling
            //console.log('down');
            $('header').removeClass('up');
-           $('header').addClass('down');
+           $('header').addClass('fixed down');
         }
         else {
            //Replace this with your function call for upward-scrolling

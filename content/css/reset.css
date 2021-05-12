@@ -7,6 +7,10 @@ html{color:#3B3B3B;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
     word-break: keep-all;
 }
 
+video[poster]{
+    object-fit: cover;
+}
+
 :lang(ko){
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 300;

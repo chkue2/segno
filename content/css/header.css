@@ -1,3 +1,8 @@
+@keyframes headermove{
+    from{
+        top: -110px;
+    }
+}
 header{
     position: absolute;
     top: 0;
@@ -9,7 +14,8 @@ header{
     overflow: hidden;
 }
 
-header.up{
+header.up,
+header.down{
     height: 110px;
     opacity: 1;
     transform: translate(0, 110px);
@@ -17,8 +23,11 @@ header.up{
     transform: translateY(-110px);
 }
 
-header.up #hmenu{
-    top: 0 !important;
+header.up #hmenu,
+header.down #hmenu{
+    animation-name: headermove;
+    animation-duration: 0.7s;
+    top: 0;
     background-color: #ffffff !important;
 }
 
@@ -32,23 +41,26 @@ header.fixed h1{
     display: none;
 }
 
-header.fixed #hmenu{
+/* header.fixed #hmenu{
+    top: -110px;
     transition: all .7s;
-}
+} */
 
-header.fixed.up{
+header.fixed.up
+header.down{
     display: block;
     overflow: unset;
 }
 
-header.fixed.up .hmenu_inner > li > a > span{
+header.fixed.up .hmenu_inner > li > a > span,
+header.fixed.down .hmenu_inner > li > a > span{
     color: #000000;
 }
 
-header.down #hmenu{
+/* header.down #hmenu{
     top: -110px;
     background-color: #ffffff;
-}
+} */
 
 header .inner{
     z-index: 2;

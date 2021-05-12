@@ -190,7 +190,7 @@ body{
 }
 
 .main_area.section_03{
-    background-image: url('/content/media/image/brand_01.png');
+    background-image: url('/content/media/image/brand_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -206,7 +206,7 @@ body{
 .main_area.section_03 .tb_04{
     padding-top: 31px;
     font-size: 44px;
-    color: #FFFFFF;
+    color: #333333;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
@@ -217,7 +217,7 @@ body{
 
 .main_area.section_03 .tb_05{
     font-size: 15px;
-    color: #E8E8E8;
+    color: #333333;
 }
 
 .main_area.section_04{
@@ -1395,7 +1395,7 @@ body{
     }
 
     .main_area.section_03{
-        background-image: url(/content/media/image/1_3.png);
+        background-image: url('/content/media/image/brand_bg.jpg');
     }
 
     .main_area.section_03 .inner .text_box{
